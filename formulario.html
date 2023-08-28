@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" min="1" max="99" id="edad">
+        <br>
+        <label for="cursado">Año Curso</label>
+        <input type="number" min="1" max="10" id="cursado">
+        <br>
+        <label for="ingreso">Fecha Ingreso</label>
+        <input type="date" id="ingreso">
+        <br>
+        <label for="">Carreras</label>
+        <select name="Carrera" id="">
+            <option value="">Fisico</option>
+            <option value="">Matemático</option>
+            <option value="">Físico-Teórico</option>
+        </select>
+        <br>
+        <label for="">Tecnicaturas</label>
+        <select name="Carrera" id="">
+            <option value="">Plomero</option>
+            <option value="">Gasista</option>
+            <option value="">Martillero Público</option>
+        </select>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>
