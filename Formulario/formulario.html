@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div id="h1">Formulario-Complete sus datos</div>
+    <p></p>
+    <form action="formulario.html" method="get" id="form">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <p></p>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido">
+        <p></p>
+        <div class="f1">
+            <div class="dninac"><label for="dni">N° DNI</label>
+                <input type="number" id="dni">
+            </div>
+            <p></p>
+            <div class="dninac"> <label for="nac">Fecha De Nacimiento</label>
+                <input type="date" id="nac">
+            </div>
+            <p></p>
+        </div>
+        <div class="f1">
+            <div class="dninac"><label for="domi">Domicilio</label>
+                <input type="text" id="domi">
+            </div>
+            <p></p>
+            <div class="dninac"><label for="loc">Localidad</label>
+                <input type="text" id="loc">
+            </div>
+            <p></p>
+        </div>
+        <h2 id="h2">Idiomas que conoce</h2>
+        <div class="idioma">
+            <input type="checkbox" id="opcion1" name="opciones[]" value="Español">
+            <label for="opcion1">Español</label><br>
+            <input type="range" id="rango" name="rango" min="0" max="100" value="50">
+            <span id="rango-actual">50</span>
+        </div>
+        <div class="idioma">
+            <input type="checkbox" id="opcion2" name="opciones[]" value="Ingles">
+            <label for="opcion2">Ingles</label><br>
+            <input type="range" id="rango1" name="rango" min="0" max="100" value="50">
+            <span id="rango-actual1">50</span>
+        </div>
+        <div class="idioma">
+            <input type="checkbox" id="opcion3" name="opciones[]" value="Frances">
+            <label for="opcion3">Frances</label><br>
+            <input type="range" id="rango2" name="rango" min="0" max="100" value="50">
+            <span id="rango-actual2">50</span>
+        </div>
+        <div class="idioma">
+            <input type="checkbox" id="opcion4" name="opciones[]" value="Chino">
+            <label for="opcion4">Chino</label><br>
+            <input type="range" id="rango3" name="rango" min="0" max="100" value="50">
+            <span id="rango-actual3">50</span>
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+    </form>
+
+    <div id="datos-formulario"></div>
+    <script src="base.js"></script>
+</body>
+</html>
